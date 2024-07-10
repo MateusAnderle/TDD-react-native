@@ -20,7 +20,7 @@ describe('StarRating', () => {
   describe('rating was NOT passed', () => {
     it('should not render rating component', () => {
       render(<StarRating />);
-      expect(screen.root).toBeFalsy();
+      expect(screen.root).toBeUndefined();
     });
   });
 });
