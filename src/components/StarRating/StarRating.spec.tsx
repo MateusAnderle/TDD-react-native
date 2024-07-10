@@ -11,9 +11,16 @@ describe('StarRating', () => {
     });
 
     it('should render average icon correctly', () => {
-      render(<StarRating rating={{ average: 2 }} />);
+      render(<StarRating rating={{ average: 8 }} />);
       const element = screen.getByTestId('startIcon');
       expect(element).toBeTruthy();
+    });
+  });
+
+  describe('rating was NOT passed', () => {
+    it('should not render rating component', () => {
+      render(<StarRating />);
+      expect(screen.root).toBeFalsy();
     });
   });
 });
