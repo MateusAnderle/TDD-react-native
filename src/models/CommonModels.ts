@@ -3,6 +3,7 @@ export interface ImageBySize {
   original?: string;
 }
 
+// eslint-disable-next-line no-shadow
 export enum DaysOfWeek {
   Monday = 'Monday',
   Tuesday = 'Tuesday',
