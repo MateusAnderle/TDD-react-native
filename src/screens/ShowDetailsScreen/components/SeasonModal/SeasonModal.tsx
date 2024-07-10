@@ -22,7 +22,7 @@ export const SeasonModal = React.forwardRef<Modalize, Props>(
         modalHeight={500}
         modalStyle={styles.container}
         ref={ref}>
-        <View style={styles.container}>
+        <View testID="season-modal" style={styles.container}>
           {seasons.map(season => (
             <Text
               key={season}
