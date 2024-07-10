@@ -1,9 +1,19 @@
 import React from 'react';
-import {render} from '@testing-library/react-native';
-import {StarRating} from './StarRating';
+import { render, screen } from '@testing-library/react-native';
+import { StarRating } from './StarRating';
 
 describe('StarRating', () => {
-  it('should render component correctly', () => {
-    render(<StarRating rating={{average: 8}} />);
+  describe('rating was passed', () => {
+    it('should render average text correctly', () => {
+      render(<StarRating rating={{ average: 8 }} />);
+      const element = screen.getByText('8');
+      expect(element).toBeTruthy();
+    });
+
+    it('should render average icon correctly', () => {
+      render(<StarRating rating={{ average: 2 }} />);
+      const element = screen.getByTestId('startIcon');
+      expect(element).toBeTruthy();
+    });
   });
 });
