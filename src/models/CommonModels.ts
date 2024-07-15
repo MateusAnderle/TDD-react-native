@@ -15,7 +15,7 @@ export enum DaysOfWeek {
 }
 
 export interface Rating {
-  average?: number;
+  average?: number | null;
 }
 
 export interface PageData<T> {

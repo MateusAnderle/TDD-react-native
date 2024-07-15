@@ -6,7 +6,7 @@ module.exports = {
   overrides: [
     {
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-      extends: ['plugin:testing-library/react'],
+      extends: ['plugin:testing-library/react', 'plugin:jest/recommended'],
       rules: {
         '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
@@ -14,4 +14,7 @@ module.exports = {
       },
     },
   ],
+  env: {
+    jest: true,
+  },
 };
