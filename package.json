@@ -53,6 +53,10 @@
     "setupFiles": [
       "./jestSetupFile.js"
     ],
+    "moduleDirectories": [
+      "node_modules",
+      "./test"
+    ],
     "setupFilesAfterEnv": [
       "@testing-library/react-native/extend-expect"
     ],

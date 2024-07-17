@@ -1,6 +1,6 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react-native';
 import { StarRating } from './StarRating';
+import { render, screen } from 'test-utils';
 
 describe('StarRating', () => {
   describe('rating was passed', () => {
