@@ -62,7 +62,8 @@
       "@testing-library/react-native/extend-expect"
     ],
     "modulePathIgnorePatterns": [
-      "mocks"
+      "mocks",
+      "e2e/"
     ],
     "moduleFileExtensions": [
       "ts",

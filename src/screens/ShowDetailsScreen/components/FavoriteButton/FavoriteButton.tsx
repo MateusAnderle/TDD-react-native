@@ -34,7 +34,7 @@ export function FavoriteButton({ show }: Props) {
   }
 
   return (
-    <Pressable onPress={toggleFavorite}>
+    <Pressable testID="favorite-button" onPress={toggleFavorite}>
       <ImageIcon
         color={colors.red}
         size={30}

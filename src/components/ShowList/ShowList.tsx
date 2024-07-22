@@ -23,6 +23,7 @@ export function ShowList({
 
   return (
     <FlatList
+      testID="show-list"
       ListFooterComponent={<LoadingIndicator isLoading={isFetchingNextPage} />}
       // eslint-disable-next-line react-native/no-inline-styles
       contentContainerStyle={{ paddingVertical: 16 }}
